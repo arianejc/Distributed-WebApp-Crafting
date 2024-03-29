@@ -12,30 +12,27 @@ This project serves as a comprehensive exploration of distributed systems and ad
 
 **Task 1**
 
-Create an index.jsp page that asks the user to enter a string of text data, and to make a choice of two hash functions using radio buttons. The hash function choices should be MD5 and SHA-256, with MD5 being the default. When the submit button is pressed a request is sent to a servlet. The servlet must be named ComputeHashes.java. The servlet will compute the requested cryptographic hash value (MD5 or SHA-256) from the text transmitted by the browser. You will need to employ the Java crypto API to compute the hash of the text. The original text will be echoed back to the browser along with the name of the hash, and the hash value. The hash values sent back to the browser should be displayed in two forms: as hexadecimal text and as base 64 notation. We will discuss the use of such hash values later in the course. To compute the MD5 and SHA-256 hashes, use these standard java packages:
+1. Index.jsp Page:
+   - Create an index.jsp page with input fields for text data and radio buttons to choose between MD5 and SHA-256 hash functions. MD5 should be the default choice.
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-To print the Base64 encoding, use the following method:
+2. ComputeHashes Servlet:
+   - Develop a servlet named ComputeHashes.java to handle the form submission.
+   - Use the Java crypto API to compute the selected cryptographic hash value (MD5 or SHA-256) from the text data transmitted by the browser.
 
-jakarta.xml.bind.DatatypeConverter.printBase64Binary()
-To print the hexadecimal encoding, use the following method:
+3. Hash Value Display:
+   - Display the original text, the name of the hash function, and the computed hash value.
+   - Show the hash values in both hexadecimal and base 64 notation.
 
-jakarta.xml.bind.DatatypeConverter.printHexBinary()
-To include the DatatypeConverter class into your project, use:
+4. DatatypeConverter Usage:
+   - Utilize the DatatypeConverter class to print the base 64 and hexadecimal encodings.
 
-import jakarta.xml.bind.DatatypeConverter;
-and add these lines to your pom.xml file, then refresh Maven:
+5. Dependency Addition:
+   - Include the DatatypeConverter class in the project and add the required dependency in the pom.xml file.
 
-<dependency>
-    <groupId>jakarta.xml.bind</groupId>
-    <artifactId>jakarta.xml.bind-api</artifactId>
-    <version>4.0.1</version>
-</dependency>
+6. Submission:
+   - Create screenshots of the working application as per the submission guidelines.
 
-Because Task 1 is fairly simple, you do not have to use MVC for it. Do the simplest thing possible (however, feel free to use MVC if you'd like).
-
-Be sure to create screen shots of your working application and submit them as described in the Submission section at the end of this document.
+Ensure that the index.jsp page prompts the user for input and hash function selection, the servlet computes the hash value accurately, and the output is displayed correctly on the browser. Screenshots of the application's functionality should be provided as part of the submission.
 
 **Task 2**
 
