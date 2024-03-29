@@ -32,9 +32,7 @@ and add these lines to your pom.xml file, then refresh Maven:
     <artifactId>jakarta.xml.bind-api</artifactId>
     <version>4.0.1</version>
 </dependency>
-Be sure to provide a simple and user friendly interface. If you are unfamiliar with HTML forms, a simple explanation can be found at:
 
-http://www.w3schools.com/html/html_forms.asp
 Because Task 1 is fairly simple, you do not have to use MVC for it. Do the simplest thing possible (however, feel free to use MVC if you'd like).
 
 Be sure to create screen shots of your working application and submit them as described in the Submission section at the end of this document.
