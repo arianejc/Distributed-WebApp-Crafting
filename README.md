@@ -76,12 +76,15 @@ For this task, you're required to develop a web application centered around Majo
 
 
 **Summary:**
+
 Task 1:
 Screen shots of input, MD5 and SHA-256 output, both in hex and base 64
 Code snippets of computation of each hash
+
 Task 2:
 Screen shots of input page(s) and output page(s).
 Code snippets for producing clicker output.
+
 Task 3:
 Screen shots of two uses of the input page (two different sets of input data) and the corresponding output pages.
 Code snippets from the Java code that screen scrapes, queries the API, and produces output.
